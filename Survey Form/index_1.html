@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="default_1.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">TMNT survey</h1>
+        <p id="description">Thank you for your valuable feedback!</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <section id="personal_data">
+                <label for="name" id="name-label">First Name:</label><br>
+                <input type="text" requierd id="name" name="name" placeholder="Enter your name"><br>
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email" required id="email" name="email" placeholder="Enter your Email"><br>
+                <label for="age" id="number-label">Age (optional):</label><br>
+                <input type="number" required id="age" name="age" min="13" max="99" placeholder="Enter your age"><br>
+            </section> 
+
+            <section id="dropdown_data">
+                <label for="dropdown">The best ninja:</label><br>
+                <select id="dropdown">
+                    <option value="Donatello">Donatello</option>
+                    <option value="Don">Don</option>
+                    <option value="Doni">Doni</option>
+                </select>
+            </section>
+
+            <section id="radio_data">
+                <p>Please select your most favourite series:</p>
+                <input type="radio" id="80s" name="series" value="80s">
+                <label for="80s">80s</label><br>
+                <input type="radio" id="90s" name="series" value="90s">
+                <label for="90s">90s</label><br>
+                <input type="radio" id="00s" name="series" value="00s">
+                <label for="00s">00s</label><br><br>
+            </section>    
+
+            <section id="checkbox_data">
+                <p>What content do you want to recieve more in future?</p>
+                <input type="checkbox" id="Comics" name="comics" value="Comics">
+                <label for="Comics">Comics</label><br>
+                <input type="checkbox" id="Cartoons" name="Cartoons" value="Cartoons">
+                <label for="Cartoons">Cartoons</label><br>
+                <input type="checkbox" id="Games" name="Games" value="Games">
+                <label for="Games">Games</label><br>
+                <input type="checkbox" id="Remastering" name="Remastering" value="Remastering">
+                <label for="Remastering">Remastering 80s series</label><br>
+            </section>
+
+            <section id="submit_comments_data">
+                <p>If you have any suggestions - please list them below :)</p>
+                <textarea id="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea><br>
+
+                <input id="submit" type="submit" value="Submit">
+            </section>
+        </form>
+
+
+    </main>
+</body>
+</html>
